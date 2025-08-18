@@ -1,0 +1,13 @@
+name: Hello on Push (sleep 3m) exp2
+on:
+  push:
+    branches: [main]
+
+jobs:
+  hello_sleep:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Say Hello
+        run: echo "Hello from exp2"
+      - name: Sleep
+        run: sleep 180
