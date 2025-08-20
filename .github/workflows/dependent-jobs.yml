@@ -1,0 +1,107 @@
+name: Block all runners with sleep (exp21)
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+    branches: [main]
+
+jobs:
+  job_01:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Sleep
+        run: sleep 120
+  job_02:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Sleep
+        run: sleep 120
+  job_03:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Sleep
+        run: sleep 120
+  job_04:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Sleep
+        run: sleep 120
+  job_05:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Sleep
+        run: sleep 120
+  job_06:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Sleep
+        run: sleep 120
+  job_07:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Sleep
+        run: sleep 120
+  job_08:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Sleep
+        run: sleep 120
+  job_09:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Sleep
+        run: sleep 120
+  job_10:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Sleep
+        run: sleep 120
+  job_11:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Sleep
+        run: sleep 120
+  job_12:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Sleep
+        run: sleep 120
+  job_13:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Sleep
+        run: sleep 120
+  job_14:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Sleep
+        run: sleep 120
+  job_15:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Sleep
+        run: sleep 120
+  job_16:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Sleep
+        run: sleep 120
+  job_17:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Sleep
+        run: sleep 120
+  job_18:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Sleep
+        run: sleep 120
+  job_19:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Sleep
+        run: sleep 120
+  job_20:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Sleep
+        run: sleep 120
