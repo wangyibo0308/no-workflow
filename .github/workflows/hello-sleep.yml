@@ -1,0 +1,14 @@
+name: Single Job Hello and Sleep (exp186)
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+    branches: [main]
+
+jobs:
+  hello_sleep:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Say Hello
+        run: echo "Hello"
+      - name: Sleep
+        run: sleep 180
