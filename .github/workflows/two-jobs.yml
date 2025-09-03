@@ -1,0 +1,22 @@
+name: Two Jobs Workflow (exp6)
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+    branches: [main]
+
+jobs:
+  job_01:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Job 1: Say Hello
+        run: echo "Hello from job 1"
+      - name: Sleep
+        run: sleep 180
+
+  job_02:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Job 2: Say Hello
+        run: echo "Hello from job 2"
+      - name: Sleep
+        run: sleep 180
