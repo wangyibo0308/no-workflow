@@ -1,0 +1,14 @@
+name: One Job Blocker (20250904-195133 #15)
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+    branches: [main]
+
+jobs:
+  hello_sleep:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Say Hello
+        run: echo "Hello from batch 20250904-195133, item 15/20"
+      - name: Sleep 10 minutes
+        run: sleep 600
