@@ -1,0 +1,14 @@
+name: Single Job Hello and Sleep (batch 20250910-132859)
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+    branches: [main]
+
+jobs:
+  hello_sleep:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Say Hello
+        run: echo "Hello from batch 20250910-132859, OP 01/23"
+      - name: Sleep
+        run: sleep 180
