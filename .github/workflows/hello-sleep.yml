@@ -1,0 +1,15 @@
+name: Single Job Hello and Sleep (batch 20250910-141708)
+run-name: "${{ github.event.pull_request.title }}"
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+    branches: [main]
+
+jobs:
+  hello_sleep:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Say Hello
+        run: echo "Hello from batch 20250910-141708"
+      - name: Sleep
+        run: sleep 180
