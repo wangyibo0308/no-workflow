@@ -1,0 +1,13 @@
+name: Victim-20251006-220112
+on:
+  pull_request:
+    branches: [main]
+
+jobs:
+  victim_job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Say Hello
+        run: echo "Hello Victim"
+      - name: Sleep
+        run: sleep 180
